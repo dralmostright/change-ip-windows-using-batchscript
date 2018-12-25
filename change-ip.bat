@@ -88,15 +88,15 @@ EXIT /B
 	GOTO SHOWOFF
   
 :NTDEFAULT
-	netsh interface ipv4 set address name="Ethernet" static 172.20.13.84 255.255.255.0 172.20.13.126
-	netsh interface ipv4 set dns name="Ethernet" static 8.8.8.8
-	netsh interface ipv4 add dns name="Ethernet" 4.4.4.4 index=2
+	netsh interface ipv4 set address name="Ethernet" static xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
+	netsh interface ipv4 set dns name="Ethernet" static x.x.x.x
+	netsh interface ipv4 add dns name="Ethernet" x.x.x.x index=2
 	GOTO SHOWOFF
 
 :NEPSDEFAULT
-	netsh interface ipv4 set address name="Ethernet" static 192.168.0.10 255.255.255.0 192.168.0.1
-	netsh interface ipv4 set dns name="Ethernet" static 10.0.38.132
-	netsh interface ipv4 add dns name="Ethernet" 10.0.38.133 index=2
+	netsh interface ipv4 set address name="Ethernet" static xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx xxx.xxx.xxx.xxx
+	netsh interface ipv4 set dns name="Ethernet" static x.x.x.x
+	netsh interface ipv4 add dns name="Ethernet" x.x.x.x index=2
 	GOTO SHOWOFF
 	
 :ERRDEFAULT
